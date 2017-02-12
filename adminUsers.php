@@ -1,20 +1,14 @@
 <?php
-class adminUsers{	
-	private $username, $password, $link, $rset, $record, $rows, $peopleId;
+include '../classes/adminUsers.php';
 
-	public function __construct(){
-		$this->link = mysql_connect("localhost", "Igor", "123");
-		mysql_select_db("hyh", $this->link);
-	}
+$action = trim($_GET['action']);
+$objUsers = new adminUsers();
 
-	public function setUsernamePassword($username,$password){ $this->username = $username; $this->password = $password; }
-
-	public function loginUser(){
-		$this->rset = mysql_query("CALL spUserNamePassword('".$this->username."','".$this->password."')", $this->link);
-		$this->rows = mysql_num_rows($this->rset);
-		if($this->rows >0){ $this->record = mysql_fetch_row($this->rset);	$this->peopleId = $this->record[0]; } else {$this->peopleId = 0; }
-
-		return "[".$this->rows.",".$this->peopleId."]";
-	}
+switch ($action){
+	case "loginUser":
+		$username = trim($_GET['username']); $password = trim($_GET['password']);
+		$objUsers->setUsernamePassword($username,$password);
+		print $objUsers->loginUser();
+		break;
 }
 ?>
