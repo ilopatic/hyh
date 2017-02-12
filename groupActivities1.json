@@ -1,0 +1,568 @@
+{
+	"activities" : [
+		{
+			"id" : 1,
+			"activity" : [
+				{	"title" : "Bonding Bowling Ball",
+					"pun" : "Give it your all when holding the ball",
+					"icon" : "iconActivity1.jpg",
+					"people" : "One Person",
+					"whatToDo" : "You must continuously carry a bowling ball on your hand for a period of seventy-two hours",
+					"opinion" : "The Bonding bowling ball will not only test your physical strength but your mental strength as well. Be careful with this activity especially if you’re going to be in the kitchen. It might be a good idea if you get other people to prepare your meals whilst doing the bonding bowling ball activity",
+					"rules" : [
+						{"rule" : "A bowling ball must be placed on your hand and must remain there for seventy-two hours"},
+						{"rule" : "It must stay on even during your everyday tasks, e.g; showering, eating, dressing, shopping, sleeping and even when you need to go to the toilet"},
+						{"rule" : "The bowling ball can change hands as often as you like but when changing you must be quick about it"},
+						{"rule" : "At no time must the bowling ball be left unattended as this is the whole purpose of the activity"}
+					]
+				}
+			]
+		},
+		{
+			"id" : 2,
+			"activity" : [
+				{	"title" : "Bicycle Blitz",
+					"pun" : "Get off your heels and on them wheels",
+					"icon" : "iconActivity2.jpg",
+					"people" : "Two or more people",
+					"whatToDo" : "Everything you own gets put in a secure location and you have to exercise to put back in the house",
+					"opinion" : "This activity will take some time to complete but once everything is back inside the house you can look around at what you have achieved and be proud of yourself and your family and friends. It would be wise to do this activity in warmer weather as you wouldn’t want your belongings to get rained on. It would also be wise to put your belongings in a garage or shed if possible",
+					"rules" : [
+						{"rule" : "All your furnishings and belongings must be taken to the secure location"},
+						{"rule" : "An exercise bike and the clothes on your back should be the only things left inside the house"},
+						{"rule" : "For every half mile that you cycle on the exercise bike you are allowed one item of your choice back in the house"},
+						{"rule" : "Everyone must take turns on the bike. There is no set amount of time each person has to be on the exercise bike"},
+						{"rule" : "You simply get on and off the bike when you want"},
+						{"rule" : "The items you pick must be individual items, e.g. when you ride half a mile  you get to pick a fork, not the whole cutlery set"}
+					]
+				}
+			]
+		},
+		{
+			"id" : 3,
+			"activity" : [
+				{	"title" : "Never Ending Neighbour",
+					"pun" : "Have fun galore with the people next door",
+					"icon" : "iconActivity3.jpg",
+					"people" : "Your family and your neighbours",
+					"whatToDo" : "The object of this activity is to move two tonne of material from your back yard and put it into your neighbour&#39;s backyard",
+					"opinion" : "This activity is a fun way to start to get fit and also to get somebody else in your local community on the right path to a healthier lifestyle. Sometimes if you have a little fun with what you are doing then it doesn&#39;t seem such an effort",
+					"rules" : [
+						{"rule" : "Each family will have two tonne of materials of their choice e.g; tyres, bricks, wood, sand etc that will be placed in your backyard"},
+						{"rule" : "You and your family are then to start removing your two tonne of materials from your back yard into your neighbour’s back yard"},
+						{"rule" : "In the meantime the neighbour you are competing with is removing their two tonne from their back yard and placing it in your back yard"},
+						{"rule" : "No outsiders are allowed to help remove any of the materials but they can certainly help with food, water, ice packs, encouragement and support"},
+						{"rule" : "Nobody is allowed back inside their houses except to go to the toilet until all of the two tonne of materials is removed from their backyard"},
+						{"rule" : "First household to relocate all the material from their back yard to their neighbour&#39;s is the winner"},
+						{"rule" : "The loser of this activity has to do their neighbours yard for one month, i.e. mow, weed and do the gardens"}
+					]
+				}
+			]
+		},
+		{
+			"id" : 4,
+			"activity" : [
+				{	"title" : "Wacky Walkers",
+					"pun" : "Dont talk the talk just walk the walk",
+					"icon" : "iconActivity4.jpg",
+					"people" : "Two or more people",
+					"whatToDo" : "Players must walk for thirty miles, backwards or forwards depending on their role in the activity",
+					"opinion" : "When doing this activity, the person walking backwards will have to be a bit more cautious than the person walking forward. Make sure the walk is done on a flat surface as hills will make it too difficult. Wear appropriate colthing, rest when necessary and drink plenty of water",
+					"rules" : [
+						{"rule" : "You must walk for thirty miles in Irish clogs"},
+						{"rule" : "You have one week to complete this activity"},
+						{"rule" : "It doesn&#39;t matter how long you walk for as long as the task is completed in the required time"},
+						{"rule" : "One person must walk forward so that they can navigate the walk for the person that must walk backwards"}
+					]
+				}
+			]
+		},
+		{
+			"id" : 5,
+			"activity" : [
+				{	"title" : "Defeating Dribble Day",
+					"pun" : "To lose your all those ounces you will need heaps of bounces",
+					"icon" : "iconActivity5.jpg",
+					"people" : "Four to six people",
+					"whatToDo" : "You must bounce a basketball for twenty-four hours straight in a mankini",
+					"opinion" : "When you are not bouncing the ball make sure you get plenty of rest, food and water.",
+					"rules" : [
+						{"rule" : "Everyone must be wearing mankinis whilst this activity is in play"},
+						{"rule" : "The basketball must be continuously bounced for twenty-four hours straight"},
+						{"rule" : "One person can continuously bounce the ball by themselves or players can bounce the ball to each other"},
+						{"rule" : "Not all players have to be bouncing the ball at the same time"},
+						{"rule" : "People not bouncing the ball may drink, eat, relax or sleep so long as they are within thirty metres of the ball being bounced"}
+					]
+				}
+			]
+		},
+		{
+			"id" : 102,
+			"activity" : [
+				{	"title" : "Heroes Heavy Hauling",
+					"pun" : "For the weight you desire flip that tyre",
+					"icon" : "iconActivity102.jpg",
+					"people" : "One or more people",
+					"whatToDo" : "You must flip a tyre, whilst wearing your favourite superhero costume for five miles",
+					"opinion" : "This activity can be done in any sort of location, it might be good to pick a location where family and friends can come for support e.g. local park or beach. However it is good to be wary of conditions that unsuitable such as slippery, rocky or unstable ground",
+					"rules" : [
+						{"rule" : "You must flip a tyre for five miles"},
+						{"rule" : "The size of the tyre should be suited to your strength"},
+						{"rule" : "You must be wearing your favourite superhero costume"},
+						{"rule" : "When flipping the tyre make sure you bend your knees and keep your back straight"},
+						{"rule" : "Only one person flips the tyre at any given time"},
+						{"rule" : "If more than one person is participating make sure you all contribute evenly in flipping the tyre"},
+						{"rule" : "You have twenty-four hours in which to complete this activity"}
+					]
+				}
+			]
+		},
+		{
+			"id" : 103,
+			"activity" : [
+				{	"title" : "Potato Pusher",
+					"pun" : "Don&#39;t be a dud carry that spud",
+					"icon" : "iconActivity103.jpg",
+					"people" : "Three or more people",
+					"whatToDo" : "You must put two hunderd potatoes in backpacks and carry them up a mountain",
+					"opinion" : "This activity will require assistants as you will need people to help attach the backpacks to your body and to help carry the potatoes that you have removed. When this activity is finished, to celebrate completion, indulge in a delicious healthy potato salad, you deserve it!",
+					"rules" : [
+						{"rule" : "For every person climbing a mountain they will need at least two assistants"},
+						{"rule" : "You must attach the backpacks to your body and carry them up the mountain"},
+						{"rule" : "This can be on either the front or the back of the body to evenly distribute the weight"},
+						{"rule" : "You must then carry them up the mountain"},
+						{"rule" : "For every thirty steps you take you remove one potato out of the backpack and hand it to one of your assitants"},
+						{"rule" : "Once all the potatoes have been removed from your backpacks you can then climb down the mountain"}
+					]
+				}
+			]
+		},
+		{
+			"id" : 104,
+			"activity" : [
+				{	"title" : "Handbrake Held Hostage",
+					"pun" : "For your health&#39;s sake use the brake",
+					"icon" : "iconActivity104.jpg",
+					"people" : "One person",
+					"whatToDo" : "You must tie a long rope to the handbrake of your car and complete all exercises from the list provided in the <a href=javascript:showHideContent(5)>More</a> section of this site",
+					"opinion" : "To make the activity easier for yourself it is recommended that you use the thinnest rope possible. Also remember to protect yourself from any sort of rope burn, by wearing thick socks if using your ankle, or wristband / sweatband if using your wrist",
+					"rules" : [
+						{"rule" : "You are to be tied to the handbrake of your car by a rope long enough for you to walk around your car"},
+						{"rule" : "You may tie the rope to your ankle or wrist"},
+						{"rule" : "You are to remain tied until all activities from the ‘Handbrake Held Hostage’ exercise list in the <a href=javascript:showHideContent(5)>More</a> section are completed"},
+						{"rule" : "You can untie yourself at any time to take a toilet break, and you are allowed a fifteen minute shower per day"},
+						{"rule" : "You must sleep in the car if all exercises are not completed by nightfall"},
+						{"rule" : "If you are doing this activity alone you must make sure there is plenty of food and water readily available or family / friends can provide it for you"}
+					]
+				}
+			]
+		},
+		{
+			"id" : 105,
+			"activity" : [
+				{	"title" : "Deranged Disco Dancing",
+					"pun" : "Take the chance and do the dance",
+					"icon" : "iconActivity105.jpg",
+					"people" : "Six people",
+					"whatToDo" : "You must dance for twenty-four hours straight all wearing tutus",
+					"opinion" : "Pick your favourite play lists and dance the night away",
+					"rules" : [
+						{"rule" : "You are to dance for twenty-four hours straight"},
+						{"rule" : "Everyone must be wearing a tutu"},
+						{"rule" : "At all times there must be at least two people on the dance floor"},
+						{"rule" : "When you are not dancing you can eat, drink, rest, sleep etc so long as you remain within one hundred feet of the dance floor"},
+						{"rule" : "For the first and last hour everyone who is participating in this activity has to be on the dance floor"}
+					]
+				}
+			]
+		},
+		{
+			"id" : 106,
+			"activity" : [
+				{	"title" : "Spandex Stair Strut",
+					"pun" : "Climb the stairs if you dare",
+					"icon" : "iconActivity106.jpg",
+					"people" : "One or more people",
+					"whatToDo" : "You must climb up or down ten thousand steps wearing spandex / lycra clothing only",
+					"opinion" : "Do this activity with someone who will give you moral support, it is much easier to exercise in the company of someone encouraging you to do well.",
+					"rules" : [
+						{"rule" : "You must climb ten thousand steps"},
+						{"rule" : "You go up and down stairs until you have completed this activity"},
+						{"rule" : "You must be wearing spandex / lycra clothing only"},
+						{"rule" : "You can stop to eat, drink, rest or for a bathroom break as required"},
+						{"rule" : "The ten thousand steps must be completed before leaving the stairs"}
+					]
+				}
+			]
+		},
+		{
+			"id" : 107,
+			"activity" : [
+				{	"title" : "Shucks! I’m Shackled",
+					"pun" : "To achieve the most get chained to the post",
+					"icon" : "iconActivity107.jpg",
+					"people" : "One or more people",
+					"whatToDo" : "You must be chained to your bedpost wearing your pyjamas and complete the exercises provided in the <a href=javascript:showHideContent(5)>More</a> section of this site",
+					"opinion" : "It is best to have someone to be your assistant for the duration of the task, to prepare your healthy meals and provide support",
+					"rules" : [
+						{"rule" : "You are to be chained to your bedpost"},
+						{"rule" : "You must be wearing your pyjamas"},
+						{"rule" : "You are to remain chained until you complete the ‘Shucks! I’m Shackled’ exercise list in the <a href=javascript:showHideContent(5)>More</a> section of this site"},
+						{"rule" : "You must have an assistant to provide you with food, water and any other necessities"},
+						{"rule" : "You can untie yourself at any time to take a bathroom break, and you are allowed a fifteen minute shower per day"}
+					]
+				}
+			]
+		},
+		{
+			"id" : 108,
+			"activity" : [
+				{	"title" : "Walking With Water",
+					"pun" : "Walk the water is what you oughta",
+					"icon" : "iconActivity108.jpg",
+					"people" : "One or more people",
+					"whatToDo" : "You must move one tonne of water, bit by bit, two hundred feet whilst wearing a wetsuit, snorkel, goggles and flippers",
+					"opinion" : "Try to move the same amount of water each day.  Don&#39;t try to carry too much water at once",
+					"rules" : [
+						{"rule" : "Each person must move one tonne of water, bit by bit, two hundred feet"},
+						{"rule" : "You must wear a wetsuit, snorkel, goggles and flippers for the duration of the activity"},
+						{"rule" : "You have three weeks to complete this activity"},
+						{"rule" : "You must carry the water without the help of things like trolleys, wheel barrows etc"},
+						{"rule" : "You can put your water in any containers you choose"},
+						{"rule" : "Back packs and bags are allowed so long as you carry them unassisted"}
+					]
+				}
+			]
+		},
+		{
+			"id" : 109,
+			"activity" : [
+				{	"title" : "Childish Cabbage Crawl",
+					"pun" : "Push the cabbage and loose the baggage",
+					"icon" : "iconActivity109.jpg",
+					"people" : "One or more people",
+					"whatToDo" : "Each person must crawl on their hands and knees for half a mile whilst pushing a cabbage. This is to be done whilst wearing a diaper and a bib",
+					"opinion" : "Make sure to use gloves and knee pads during this activity to avoid injuries. Also remember to stretch when needed, to avoid stiffening your muscles. If the activity is done by just one person, an assistant is advised, however this is at the discretion of the individual",
+					"rules" : [
+						{"rule" : "You must push a cabbage half a mile whilst crawling on your hands and knees"},
+						{"rule" : "The cabbage must weigh at least seven pounds"},
+						{"rule" : "You may take a break at any time, so long as you resume the activity from where you stopped"},
+						{"rule" : "You must wear a diaper and a bib at all times, and only drink from a baby’s bottle during the activity"},
+						{"rule" : "You have one day to complete this activity"}
+					]
+				}
+			]
+		},
+		{
+			"id" : 110,
+			"activity" : [
+				{	"title" : "Passionately Post It",
+					"pun" : "You are allowed to boast after you post",
+					"icon" : "iconActivity110.jpg",
+					"people" : "One person",
+					"whatToDo" : "You must fill all the walls in your bedroom with post-it notes",
+					"opinion" : "This is a good activity to do over a longer period of time. Once the activity is complete you will be able to look around your room and see what you have achieved. Get your friends involved and encourage them to eat healthier as well",
+					"rules" : [
+						{"rule" : "For every serve of healthy food you eat from the ‘Healthy Eating List’in the <b>More</b> section you can stick one post-it note to your wall"},
+						{"rule" : "E.g. One apple = one post-it note and two apples = two post-it notes"},
+						{"rule" : "The activity is over when your bedroom walls are full with post-it notes"}
+					]
+				}
+			]
+		},
+		{
+			"id" : 111,
+			"activity" : [
+				{	"title" : "Queen Of Questions",
+					"pun" : "",
+					"icon" : "iconActivity111.gif",
+					"people" : "Six to eight people",
+					"whatToDo" : "Organise a trivia night and arrange for all players to bring plates of different healthy food",
+					"opinion" : "This is a good activity for when you are in need of a fun night with friends. It is beneficial, as whether you answer correctly or incorrectly, you are still doing something healthy. Also, having your friends involved makes it seem as though it is less an obligation and more a pleasure",
+					"rules" : [
+						{"rule" : "Invite your friends around for a trivia night"},
+						{"rule" : "Each person is to bring a different plate of healthy food"},
+						{"rule" : "Organise a range of questions related to healthy eating and lifestyle"},
+						{"rule" : "For every question a person answers correctly, they are allowed to eat one piece of food"},
+						{"rule" : "For every question a person answers incorrectly, they are to do twenty repetitions of an exercise from the <a href=javascript:showHideContent(5)>More</a> section"}
+					]
+				}
+			]
+		},
+		{
+			"id" : 112,
+			"activity" : [
+				{	"title" : "Eight Is Enough",
+					"pun" : "With the help of eight you will lose the weight",
+					"icon" : "iconActivity112.jpg",
+					"people" : "Eight People",
+					"whatToDo" : "Host a get together for eight people at your place",
+					"opinion" : "It&#39;s a lot easier to stay the course when you have group support",
+					"rules" : [
+						{"rule" : "You must invite seven other people to a get together at your place"},
+						{"rule" : "You must pick guests who you feel are supportive and need support themselves"},
+						{"rule" : "You  must pick guests who you know struggle with weight and or health issues"},
+						{"rule" : "Every guest must bring a different dish for you all to eat"},
+						{"rule" : "The dish must be healthy yet tasty"},
+						{"rule" : "You must all come up with a name for your group"},
+						{"rule" : "You must all encourage and support each other to start to live healthier and happier lifestyles"},
+						{"rule" : "You must come up with a system where you all keep in touch on a regular basis"},
+						{"rule" : "You must catch up every three weeks bringing a healthy dish and eight tips for a healthier lifestyle"},
+						{"rule" : "The first time you catch up everyone must come dressed in something beginning with the letter &#34;E&#34; e.g. egg, elephant etc"},
+						{"rule" : "This activity is to last eight months"}
+					]
+				}
+			]
+		},
+		{
+			"id" : 113,
+			"activity" : [
+				{	"title" : "Bouncing Balloon",
+					"pun" : "You&#39;ll get healthy soon if you bounce the balloon",
+					"icon" : "iconActivity113.jpg",
+					"people" : "Four People",
+					"whatToDo" : "A balloon must remain airborne for twenty-four hours straight",
+					"opinion" : "Make sure you take plenty of breaks and have plenty of spare balloons handy",
+					"rules" : [
+						{"rule" : "The activity begins by bouncing the balloon in the air"},
+						{"rule" : "The balloon must remain airborne for twenty-four hours straight"},
+						{"rule" : "If the balloon hits the ground more than five times in the twenty-four period the activity must start again"},
+						{"rule" : "Not all people have to partake in this activity at the one time"},
+						{"rule" : "If the balloon bursts it must be replaced as quickly as possible and this is not considered a drop"}
+					]
+				}
+			]
+		},
+		{
+			"id" : 114,
+			"activity" : [
+				{	"title" : "Five Footed Frolic",
+					"pun" : "Use your feet and watch your weight retreat",
+					"icon" : "iconActivity114.jpg",
+					"people" : "Four People",
+					"whatToDo" : "All four people must walk twenty miles with their ankles tied together",
+					"opinion" : "This activity will not only test your physical strength but your mental strength too.  Remember patience is a virtue.  When you all work together and get a routine happening you will find it will all start to fall into place",
+					"rules" : [
+						{"rule" : "All four people must stand side by side with their ankles tied together leaving the outer legs free on each side"},
+						{"rule" : "As a group you must walk for twenty miles"},
+						{"rule" : "You can change your position in the line at any time"},
+						{"rule" : "You can stop and rest whenever you like"},
+						{"rule" : "You must complete this activity in a seventy-two hour period"}
+					]
+				}
+			]
+		},
+		{
+			"id" : 115,
+			"activity" : [
+				{	"title" : "Anklebiter&#39;s Amusements",
+					"pun" : "Just go wild and become a child",
+					"icon" : "iconActivity115.jpg",
+					"people" : "As Many People As Possible",
+					"whatToDo" : "You must organise a fun day out for a fundraiser at your local park or sports oval",
+					"opinion" : "This is a good way to get in touch with your inner child. If you want to raise even more money we suggest some food stands be added to the day&#39;s event",
+					"rules" : [
+						{"rule" : "You must organise a fund raiser for a kid&#39;s charity of your choice"},
+						{"rule" : "You must organise fun games and activities for both children and adults alike"},
+						{"rule" : "Everyone taking part must donate money"},
+						{"rule" : "You can charge a flat rate for the day or a set amount for each activity"},
+						{"rule" : "Go to the anklebiter&#39;s amusement list in the <a href=javascript:showHideContent(5)>More</a> section for ideas as well as coming up with your own"},
+						{"rule" : "All adults must dress as children on the day"}
+					]
+				}
+			]
+		},
+		{
+			"id" : 117,
+			"activity" : [
+				{	"title" : "Balancing Baseball",
+					"pun" : "You must get ready to be very steady",
+					"icon" : "iconActivity117.jpg",
+					"people" : "One Person",
+					"whatToDo" : "You must do your weekly shopping while balancing a baseball on a thimble",
+					"opinion" : "This is a great way to learn to balance your budget as well as the ball",
+					"rules" : [
+						{"rule" : "Write up a healthy shopping list"},
+						{"rule" : "You must start balancing the baseball on the thimble the moment you step inside the grocery store"},
+						{"rule" : "If you drop the baseball you must do ten butt kicks where you dropped it before you continue with the activity"},
+						{"rule" : "You must at least wear a  baseball cap, but ideally if you can wear the whole outfit"},
+						{"rule" : "The activity only ends when you have left the store with all your purchases"}
+					]
+				}
+			]
+		},
+		{
+			"id" : 118,
+			"activity" : [
+				{	"title" : "Host A Health Hangout",
+					"pun" : "No more slathering when you have your gathering",
+					"icon" : "iconActivity118.jpg",
+					"people" : "Three Or More People",
+					"whatToDo" : "You must hold a health retreat for a seventy-two hour period incorporating healthy eating, exercising and entertainment",
+					"opinion" : "This activity is a great way to kick start your new healthy lifestyle as well as exchange your healthy views with your friends.  Your chances of success are significantly increased if you choose like minded individuals to partake in this activity. If you get stuck for ideas check out the list in the <a href=javascript:showHideContent(5)>More</a> section",
+					"rules" : [
+						{"rule" : "A health programme must be created for you and your friends"},
+						{"rule" : "The health retreat must last for seventy-two hours"},
+						{"rule" : "All food and beverages must be healthy"},
+						{"rule" : "You must exercise as much possible"},
+						{"rule" : "You must provide entertainment for all your guests"},
+						{"rule" : "During the seventy-two hours no contact with the outside world is permitted"}
+					]
+				}
+			]
+		},
+		{
+			"id" : 119,
+			"activity" : [
+				{	"title" : "Eliminate Electronics",
+					"pun" : "In order to gain you must refrain",
+					"icon" : "iconActivity119.jpg",
+					"people" : "One or more people",
+					"whatToDo" : "You must not use any digital devices for seventy-two hours.",
+					"opinion" : "It was not that long ago that we all lived like this.  It&#39;s not that hard just ask the Amish",
+					"rules" : [
+						{"rule" : "You must not use phones, computers, tablets, TVs, radios, Ipods etc for seventy- two hours"},
+						{"rule" : "You must do at least ten activities from the list in the <a href=javascript:showHideContent(5)>More</a> section"}
+					]
+				}
+			]
+		},
+		{
+			"id" : 120,
+			"activity" : [
+				{	"title" : "Dream Destination",
+					"pun" : "Go full steam and live your dream",
+					"icon" : "iconActivity120.jpg",
+					"people" : "For One or More People",
+					"whatToDo" : "You must pick your ultimate dream destination that you have always wanted to go to<br>Examples:<br>Climb the great wall of China<br>Ride the elephants in Thailand<br>Feed the dolphins at Monkey Mia<br>Take a photo of yourself holding up the Leaning Tower of Pisa",
+					"opinion" : "Decorate the room with posters, flags, pictures, ornaments etc to encourage you to get to your destination",
+					"rules" : [
+						{"rule" : "You must pick your ultimate dream destination"},
+						{"rule" : "Your dream destination must be at least five hundred miles from where you live"},
+						{"rule" : "Work out the distance between your place of residence and your dream destination and that is the number of miles you must ride your exercise bike"},
+						{"rule" : "You must be tied to the exercise bike for the duration of the activity"},
+						{"rule" : "The rope must be long enough for you to move around your house for when you have to shower, eat, sleep, go to bathroom etc"},
+						{"rule" : "There is no time limit for this activity so you do not have to complete the entire distance at once, so go at your own pace"}
+					]
+				}
+			]
+		},
+		{
+			"id" : 121,
+			"activity" : [
+				{	"title" : "Jumping Jack Juices",
+					"pun" : "Drink the juice and your pants will be loose",
+					"icon" : "iconActivity121.jpg",
+					"people" : "One Person",
+					"whatToDo" : "You must do jumping jacks to earn your daily food intake over a seventy-two hour period",
+					"opinion" : "This is a good way to research new healthy meal alternatives",
+					"rules" : [
+						{"rule" : "For every thirty jumping jacks you do you can consume four (fl oz) of the juice of your choice"},
+						{"rule" : "You can double the quantity if you complete the thirty jumping jacks while wearing a fruit or vegetable costume"},
+						{"rule" : "You can start the day off with eight (fl oz) of your choice of juice no exercise required"},
+						{"rule" : "Water can be consumed at any time no exercise required"},
+						{"rule" : "There is no limit to the amount of juice you can consume provided the first rule is adhered to"},
+						{"rule" : "Juices include smoothies, fruit juices, milk, soups, casseroles and any other healthy liquid"},
+						{"rule" : "This activity is to last for a seventy-two hour period"}
+					]
+				}
+			]
+		},
+		{
+			"id" : 122,
+			"activity" : [
+				{	"title" : "Skipping Silly",
+					"pun" : "To lose those hips do those skips",
+					"icon" : "iconActivity122.jpg",
+					"people" : "Four People",
+					"whatToDo" : "You must skip twenty miles using a skipping rope",
+					"opinion" : "You can do this activity anywhere, if you do not wish to travel far from home you can do laps of your block or just skip up and down the street",
+					"rules" : [
+						{"rule" : "Between the four of you twenty miles of skipping must be completed"},
+						{"rule" : "Only one person skips at a time while the rest ride along side them"},
+						{"rule" : "It is up to each person as to how long they wish to skip"},
+						{"rule" : "When you stop skipping another person takes over"},
+						{"rule" : "You can all rest when you want provided you start again from where you left off"},
+						{"rule" : "You continue taking turns until the twenty miles is reached"},
+						{"rule" : "There is no time limit to this activity, but once it starts the distance must be reached before you can go home"}
+					]
+				}
+			]
+		},
+		{
+			"id" : 123,
+			"activity" : [
+				{	"title" : "Sack Strolling",
+					"pun" : "Keep your health on track by jumping in that sack",
+					"icon" : "iconActivity123.jpg",
+					"people" : "One Or More People",
+					"whatToDo" : "You must walk or jump five miles in a sack",
+					"opinion" : "When using hessian sacks be aware that they can cause skin irritation so dress appropriately",
+					"rules" : [
+						{"rule" : "Once activity has begun you must remain in the sack until you have completed the five miles"},
+						{"rule" : "There is no time limit to this activity"},
+						{"rule" : "The only time you can remove yourself from the sack while doing this activity is to go to the bathroom"}
+					]
+				}
+			]
+		},
+		{
+			"id" : 124,
+			"activity" : [
+				{	"title" : "Hold Your Horses",
+					"pun" : "You must resist until you finish the list",
+					"icon" : "iconActivity124.jpg",
+					"people" : "One Or More People",
+					"whatToDo" : "Participants must eat and drink everything that is on the hold your horses list in the <a href=javascript:showHideContent(5)>More</a> section before they are allowed to eat anything else",
+					"opinion" : "Mix up your food intake.  You shouldn&#39;t consume one hundred cups of fruit in one go.  You should spread that out over the time you have given yourself to complete this activity",
+					"rules" : [
+						{"rule" : "You must eat everything on the hold your horses list in the <a href=javascript:showHideContent(5)>More</a> section before you can resume your usual diet"},
+						{"rule" : "Salt, pepper, spices and condiments are permissable"},
+						{"rule" : "There is no time limit to this activity"}
+					]
+				}
+			]
+		},
+		{
+			"id" : 126,
+			"activity" : [
+				{	"title" : "Tied To A Tree",
+					"pun" : "Exercise is the key so tie yourself to that tree",
+					"icon" : "iconActivity126.jpg",
+					"people" : "One or more people",
+					"whatToDo" : "All participants must complete the list of exercises in the <a href=javascript:showHideContent(5)>More</a> section while tied to a tree",
+					"opinion" : "Participants should organise some type of support crew of family or friends that can get them food and water when required.  Make sure to have sleeping arrangements organised in case you do not finish in the one day. Check the weather report before commencing this activity",
+					"rules" : [
+						{"rule" : "All participants must be tied to a tree"},
+						{"rule" : "All exercises on the list in the <a href=javascript:showHideContent(5)>More</a> section must be competed by everyone individually"},
+						{"rule" : "The exercises do not have to be done in any specific order so long as they are all completed"},
+						{"rule" : "If the list is not completed in one day then you have to sleep tied to the tree"},
+						{"rule" : "Once you have completed the exercises you can untie yourself without waiting for the others to finish"},
+						{"rule" : "Don&#39;t do one exercise in its entirety.  Split it up, if you have to do two thousand five hundred repetitions then do fifty - one hundred at a time"},
+						{"rule" : "Have a means of keeping track of the exercises you have done, a pen and paper, a spreadsheet or something similar"}
+					]
+				}
+			]
+		},
+		{
+			"id" : 127,
+			"activity" : [
+				{	"title" : "Defeating Them Darts",
+					"pun" : "Make a start and throw the dart",
+					"icon" : "iconActivity127.jpg",
+					"people" : "One Person",
+					"whatToDo" : "You must get rid of all your coins from your money sack by scoring points on a dartboard",
+					"opinion" : "I suggest you find a costume starting with the letter &#34;D&#34; as this will halve the time frame.  For moral support you can do this activity on a public dart board like you would find in a bar, pub or club",
+					"rules" : [
+						{"rule" : "You have to start with two thousand five hundred coins strapped to your waist in a money bag or in a back pack"},
+						{"rule" : "For every one hundred points scored on the dartboard you can remove one coin from you bag"},
+						{"rule" : "The activity ends when all the coins are removed"},
+						{"rule" : "Earn double points from the dartboard by wearing a costume beginning with the letter &#34;D&#34; e.g. dog, door, donut etc"},
+						{"rule" : "You can only consume healthy food and beverages when doing this activity"},
+						{"rule" : "There is no time limit to this activity, but you cannot resume your regular diet until it has been completed in full"}
+					]
+				}
+			]
+		}
+	]
+}

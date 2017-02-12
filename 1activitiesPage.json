@@ -1,0 +1,11 @@
+{
+	"headingGroups" : "<h1>Groups</h1>",
+	"headingActivities" : "<h1>Activities</h1>",
+	"headingActivity" : "<h1>Activity</h1>",
+	"backLinkTitle" : "Back to Activities List",
+	"lblTitle" : "Title",
+	"lblPeople" : "People",
+	"lblWhatToDo" : "What To Do",
+	"lblRules" : "Rules",
+	"lblOpinion" : "Opinion"
+}

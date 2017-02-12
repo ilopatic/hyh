@@ -1,0 +1,94 @@
+{
+	"activities" : [
+		{
+			"id" : 6,
+			"activity" : [
+				{	"title" : "Le Bonding Bowling Ball",
+					"icon" : "iconActivity1.jpg",
+					"people" : "Le 1 Person",
+					"whatToDo" : "Le You must continuously carry a bowling ball on your hand for a period of 72 hours.",
+					"opinion" : "Le The Bonding bowling ball will not only test your physical strength but your mental strength as well. Be careful with this activity especially if you’re going to be in the kitchen. It might be a good idea if you get other people to prepare your meals whilst doing the bonding bowling ball activity.",
+					"rules" : [
+						{"rule" : "Le A bowling ball must be placed on your hand and must remain there for 72 hours."},
+						{"rule" : "Le It must stay on even during your everyday tasks, e.g; showering, eating, dressing, shopping, sleeping and even when you need to go to the toilet."},
+						{"rule" : "Le The bowling ball can change hands as often as you like but when changing you must be quick about it."},
+						{"rule" : "Le At no time must the bowling ball be left unattended as this is the whole purpose of this activity."}		
+					]				
+				}
+			]
+		},
+		{
+			"id" : 7,
+			"activity" : [
+				{	"title" : "Le Bicycle Blitz",
+					"icon" : "iconActivity2.jpg",
+					"people" : "Le A family or group of 2 or more people.",
+					"whatToDo" : "Le Everything you own gets put in a secure location and you have to exercise to get it put back in the house. ",
+					"opinion" : "Le This activity will take some time to complete but once everything is back inside the house you can look around at what you have achieved and be proud of yourself and your family/friends. It would be wise to do this activity in warmer weather as you wouldn’t want your belongings to get rained on. It would also be wise to put your belongings in a garage or shed if possible.",
+					"rules" : [
+						{"rule" : "Le All your furnishings and belongings must be taken to the secure location."},
+						{"rule" : "Le An exercise bike and the clothes on your back should be the only things left inside the house."},
+						{"rule" : "Le For every mile that you cycle on the exercise bike you are allowed one item of your choice back in the house."},
+						{"rule" : "Le All players must take it in turns on the bike. There is no set amount of time each player has to be on the exercies bike."},
+						{"rule" : "Le You simply get on and off the bike when you want."},
+						{"rule" : "Le The items you pick must be individual items, e.g.; when you ride a mile you get to pick a fork, not the whole cutlery set."}
+					]				
+				}
+			]
+		},
+		{
+			"id" : 8,
+			"activity" : [
+				{	"title" : "Le Never Ending Neighbour",
+					"icon" : "iconActivity3.jpg",
+					"people" : "Le You and your family and one of your neighbours.",
+					"whatToDo" : "Le The object of this activity is to move your 5 tonne of material from your front yard and put it into your neighbours backyard.",
+					"opinion" : "Le This activity is a fun way to start to get fit and also to get somebody else in your local community on the right path to a healthier lifestyle. Sometimes if you have a little fun with what you are doing then it doesn't seem such an effort.",
+					"rules" : [
+						{"rule" : "Le Each family will have 5 tonne of materials of his choice e.g; tyres, bricks, wood, sand that will be placed in his backyard."},
+						{"rule" : "Le You and your family are then to start removing your 5 tonne of materials from your front yard into your neighbour’s backyard."},
+						{"rule" : "Le In the meantime the neighbour you are competing with is removing his 5 tonne form his front yard and placing it in your backyard."},
+						{"rule" : "Le No outsiders are allowed to help remove any of the materials but they can certainly help with food, water, ice packs, encouragement and support."},
+						{"rule" : "Le Nobody is allowed back inside their houses except to go to the toilet until all of their 5 tonne of materials is removed from their backyard."},
+						{"rule" : "Le The loser of this activity has to do their neighbours yard for one month, i.e. Mow, weed and do the gardens. "}
+					]				
+				}
+			]
+		},
+		{
+			"id" : 9,
+			"activity" : [
+				{	"title" : "Le Wacky Walkers",
+					"icon" : "iconActivity4.jpg",
+					"people" : "Le 2 People.",
+					"whatToDo" : "Le Players must walk for 30 miles, backwards or forwards depending on their role in the activity.",
+					"opinion" : "Le When doing this activity, the person walking backwards will have to be a bit more cautious than the person walking forward. Make sure the walk is done on a flat surface as hills will make it too difficult. Wear appropriate clothing, footwear and drink plenty of water.",
+					"rules" : [
+						{"rule" : "Le Players must walk for 30 miles in Irish clogs."},
+						{"rule" : "Le You have only 72 hours to complete this activity."},
+						{"rule" : "Le It doesn't matter how long you walk for as long as long as the task is completed in the required time."},
+						{"rule" : "Le 1 player must walk forward so that they can navigate the walk for the person that must walk backwards."}
+					]				
+				}
+			]
+		},
+		{
+			"id" : 10,
+			"activity" : [
+					{	"title" : "Le Defeating Dribble Day",
+						"icon" : "iconActivity5.jpg",
+						"people" : "Le 4-6 People",
+						"whatToDo" : "Le You must bounce a basketball for 24 hours straight in a mankini. ",
+						"opinion" : "Le Make sure when it’s not your turn, that you get plenty of rest and you are not bouncing the ball for to long and using up all your energy.",
+					"rules" : [
+						{"rule" : "Le All players must be wearing mankinis whilst this activity is in play."},
+						{"rule" : "Le The basketball must continuously bounce for 24 hours straight."},
+						{"rule" : "Le It is up to you how many players you have bouncing the ball at once, as long as the ball is always in play."},
+						{"rule" : "Le Players may drink, eat, relax or sleep while any person is bouncing the ball."},
+						{"rule" : "Le All players must be within 30 metres of the ball is being  bounced."}
+					]				
+				}
+			]
+		}
+	]
+}

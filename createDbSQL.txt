@@ -1,0 +1,409 @@
+CREATE SCHEMA `hyh` ;
+
+----------------------------------------------------------------------------
+
+CREATE TABLE languages(
+	languageId int not null auto_increment,
+	languageText nvarchar(50) not null,
+	active bit not null,
+	PRIMARY KEY (languageId)
+);
+
+----------------------------------------------------------------------------
+
+CREATE TABLE listTypes(
+	listTypeId int not null auto_increment,
+	languageId int not null,
+	title nvarchar(100) not null,
+	PRIMARY KEY (listTypeId),
+	FOREIGN KEY (languageId) REFERENCES languages(languageId)
+);
+
+----------------------------------------------------------------------------
+
+CREATE TABLE lists(
+	listId int not null auto_increment,
+	listTypeId int not null,
+	title nvarchar(2000) not null,
+	icon nvarchar(255) null,
+	PRIMARY KEY (listId),
+	FOREIGN KEY (listTypeId) REFERENCES listTypes(listTypeId)
+);
+
+----------------------------------------------------------------------------
+
+CREATE TABLE listItems(
+	listItemId int not null auto_increment,
+	listId int not null,
+	title nvarchar(1000) not null,
+	PRIMARY KEY (listItemId),
+	FOREIGN KEY (listId) REFERENCES lists(listId)
+);
+
+----------------------------------------------------------------------------
+
+CREATE TABLE People ( 
+	peopleId int not null auto_increment,
+	lastName varchar(255) not null,
+	firstName varchar(255) not null,
+	email varchar(255) not null,
+	pword varchar(100) not null, 
+	dob date null,
+	isActive bit not null,
+	PRIMARY KEY (peopleId)
+);
+
+----------------------------------------------------------------------------
+
+CREATE TABLE activityGroups( 
+	activityGroupId int not null auto_increment,
+	languageId int not null,
+	title varchar(255) not null, 
+	description varchar(1000) not null,
+	active bit not null,
+	dateCreated date not null,
+	createdBy int not null,
+	PRIMARY KEY (activityGroupId),
+	FOREIGN KEY (languageId) REFERENCES languages(languageId)
+);
+
+----------------------------------------------------------------------------
+
+CREATE TABLE activities( 
+	activityId int not null auto_increment,
+	title varchar(255) not null, 
+	icon varchar(255) not null,
+	pun varchar(255) null,
+	people varchar(500) not null, 
+	whatToDo varchar(1000) not null,
+	opinion varchar(2000) not null,
+	active bit not null,
+	dateCreated date not null,
+	createdBy int not null,
+	PRIMARY KEY (activityId)
+);
+
+----------------------------------------------------------------------------
+
+CREATE TABLE activityRules( 
+	activityRuleId int not null auto_increment,
+	activityId int not null,
+	description varchar(500) not null,
+	active bit not null,
+	dateCreated date not null,
+	createdBy int not null,
+	PRIMARY KEY (activityRuleId),
+	FOREIGN KEY (activityId) REFERENCES activities(activityId)
+);
+
+----------------------------------------------------------------------------
+
+CREATE TABLE activityGroupLink( 
+	activityGroupLinkId int not null auto_increment,
+	activityGroupId int not null,
+	activityId int not null,
+	PRIMARY KEY (activityGroupLinkId),
+	FOREIGN KEY (activityGroupId) REFERENCES activityGroups(activityGroupId),
+	FOREIGN KEY (activityId) REFERENCES activities(activityId)
+);
+
+----------------------------------------------------------------------------
+
+CREATE TABLE pages ( 
+	pageId int not null auto_increment,
+	pageTitle varchar(255) not null, 
+	pageDescription varchar(500) null, 
+	PRIMARY KEY (pageId)
+);
+
+CREATE TABLE pageKeys( 
+	pageKeyId int not null auto_increment,
+	pageId int not null, 
+	pageKey varchar(255) not null, 
+	PRIMARY KEY (pageKeyId),
+	FOREIGN KEY(pageId) REFERENCES pages(pageId)
+);
+
+----------------------------------------------------------------------------
+
+CREATE TABLE pageValues( 
+	pageValueId int not null auto_increment,
+	languageId int not null,
+	pageKeyId int not null,
+	pageValue varchar(2000) not null, 
+	PRIMARY KEY (pageValueId),
+	FOREIGN KEY(pageKeyId) REFERENCES pageKeys(pageKeyId),
+	FOREIGN KEY(languageId) REFERENCES languages(languageId)
+);
+
+----------------------------------------------------------------------------
+
+DELIMITER $$
+DROP PROCEDURE IF EXISTS `spUserNamePassword`;
+CREATE PROCEDURE spUserNamePassword(
+	in uname varchar(255),
+	in pwd varchar(100)	
+)
+BEGIN
+	select *
+	from people
+	where email = uname and pword = pwd and isactive = 1;
+END
+
+----------------------------------------------------------------------------
+
+DELIMITER $$
+DROP PROCEDURE IF EXISTS `spGetActivitiesList`;
+CREATE PROCEDURE spGetActivitiesList(
+	in groupId int
+)
+BEGIN
+	select act.activityId,act.title,act.icon,act.active
+	from activities as act
+	inner join activityGroupLink as agl on act.activityId = agl.activityId
+	where agl.activityGroupId = groupId
+	order by act.activityId;
+END
+
+----------------------------------------------------------------------------
+
+DELIMITER $$
+DROP PROCEDURE IF EXISTS `spGetActivity`;
+CREATE PROCEDURE spGetActivity(
+	in actId int
+)
+BEGIN
+	select act.activityId, act.title, act.pun, act.icon, act.people, act.whatToDo, act.opinion, act.active,
+			ar.activityRuleId, ar.description as rule, ar.active as ruleActive
+	from activities as act
+	inner join activityRules as ar on act.activityId = ar.activityId
+	where act.activityId = actId
+	order by ar.activityRuleId;
+END
+
+----------------------------------------------------------------------------
+
+DELIMITER $$
+DROP PROCEDURE IF EXISTS `spInsertActivity`;
+CREATE PROCEDURE spInsertActivity(
+	IN p_title varchar(255), 
+	IN p_icon varchar(255),
+	IN p_pun varchar(255),
+	IN p_people varchar(500), 
+	IN p_whatToDo varchar(1000),
+	IN p_opinion varchar(2000),
+	IN p_active bit,
+	IN p_dateCreated date,
+	IN p_createdBy int,
+	OUT p_activityId int
+)
+BEGIN
+	INSERT INTO activities(title,icon,pun,people,whatToDo,opinion,active,dateCreated,createdBy)
+	VALUES(p_title,p_icon,p_pun,p_people,p_whatToDo,p_opinion,p_active,p_dateCreated,p_createdBy);
+	SET p_activityId = LAST_INSERT_ID();
+END
+
+----------------------------------------------------------------------------
+
+DELIMITER $$
+DROP PROCEDURE IF EXISTS `spUpdateActivity`;
+CREATE PROCEDURE spUpdateActivity(
+	IN p_activityId int,
+	IN p_title varchar(255), 
+	IN p_pun varchar(255),
+	IN p_people varchar(500), 
+	IN p_whatToDo varchar(1000),
+	IN p_opinion varchar(2000),
+	IN p_active bit
+)
+BEGIN
+	UPDATE activities SET
+		title = p_title,
+		pun = p_pun,
+		people = p_people,
+		whatToDo = p_whatToDo,
+		opinion = p_opinion,
+		active = p_active
+	WHERE activityId = p_activityId;
+END
+
+----------------------------------------------------------------------------
+
+DELIMITER $$
+DROP PROCEDURE IF EXISTS `spUpdateActivityIcon`;
+CREATE PROCEDURE spUpdateActivityIcon(
+	IN p_activityId int,
+	IN p_icon varchar(255)
+)
+BEGIN
+	UPDATE activities
+	SET icon = p_icon
+	WHERE activityId = p_activityId;
+END
+
+----------------------------------------------------------------------------
+
+DELIMITER $$
+DROP PROCEDURE IF EXISTS `spInsertActivityRule`;
+CREATE PROCEDURE spInsertActivityRule(
+	IN p_activityId int,
+	IN p_description varchar(500),
+	IN p_active bit,
+	IN p_dateCreated date,
+	IN p_createdBy int
+)
+BEGIN
+	INSERT INTO activityRules(activityId,description,active,dateCreated,createdBy)
+	VALUES(p_activityId,p_description,p_active,p_dateCreated,p_createdBy);
+END
+
+----------------------------------------------------------------------------
+
+DELIMITER $$
+DROP PROCEDURE IF EXISTS `spUpdateActivityRule`;
+CREATE PROCEDURE spUpdateActivityRule(
+	IN p_activityRuleId int,
+	IN p_description varchar(500),
+	IN p_active bit
+)
+BEGIN
+	UPDATE activityRules SET
+		description = p_description,
+		active = p_active
+	WHERE activityRuleId = p_activityRuleId;
+END
+
+----------------------------------------------------------------------------
+
+DELIMITER $$
+DROP PROCEDURE IF EXISTS `spActivityGroupLink`;
+CREATE PROCEDURE spActivityGroupLink(
+	IN p_groupId int,
+	IN p_activityId int
+)
+BEGIN
+	DELETE FROM activityGroupLink WHERE activityGroupId = p_groupId AND activityId = p_activityId;
+	INSERT INTO activityGroupLink(activityGroupId,activityId) VALUES(p_groupId,p_activityId);
+END
+
+----------------------------------------------------------------------------
+
+DELIMITER $$
+DROP PROCEDURE IF EXISTS `spGetActivityGroup`;
+CREATE PROCEDURE spGetActivityGroup(
+	in p_groupId int
+)
+BEGIN
+	select act.activityId, act.title, act.pun, act.icon, act.people, act.whatToDo, act.opinion, act.active,
+			ar.activityRuleId, ar.description as rule, ar.active as ruleActive
+	from activitygrouplink as agl
+	inner join activities as act on agl.activityId = act.activityId
+	inner join activityRules as ar on act.activityId = ar.activityId
+	where agl.activityGroupId = p_groupId and act.active = true and ar.active = true
+	order by act.activityId, ar.activityRuleId;
+END
+
+----------------------------------------------------------------------------
+
+DELIMITER $$
+DROP PROCEDURE IF EXISTS `spInsertListType`;
+CREATE PROCEDURE spInsertListType(
+	in p_languageId int,
+	in p_title nvarchar(100)
+)
+BEGIN
+	insert into listTypes(languageId,title) values(p_languageId,p_title);
+END
+
+----------------------------------------------------------------------------
+
+DELIMITER $$
+DROP PROCEDURE IF EXISTS `spInsertList`;
+CREATE PROCEDURE spInsertList(
+	in p_listTypeId int,
+	in p_title nvarchar(100),
+	in p_icon nvarchar(255)
+)
+BEGIN
+	insert into lists(listTypeId,title,icon) values(p_listTypeId,p_title,p_icon);
+END
+
+----------------------------------------------------------------------------
+
+DELIMITER $$
+DROP PROCEDURE IF EXISTS `spInsertListItem`;
+CREATE PROCEDURE spInsertListItem(
+	in p_listId int,
+	in p_title nvarchar(1000)
+)
+BEGIN
+	insert into listItems(listId,title) values(p_listId,p_title);
+END
+
+----------------------------------------------------------------------------
+
+DELIMITER $$
+DROP PROCEDURE IF EXISTS `spGetListsByTypeId`;
+CREATE PROCEDURE spGetListsByTypeId(
+	in p_listTypeId int
+)
+BEGIN
+	select lt.languageId, lt.title as listType, l.listId, l.title, l.icon, li.listItemId, li.title as listItem
+	from listTypes as lt
+	inner join lists as l on lt.listTypeId = l.listTypeId and l.active = 1
+	inner join listItems as li on l.listId = li.listId
+	where lt.listTypeId = p_listTypeId
+	order by l.listId, li.ListItemId;
+END
+
+----------------------------------------------------------------------------
+
+DELIMITER $$
+DROP PROCEDURE IF EXISTS `spGetListsByListId`;
+CREATE PROCEDURE spGetListsByListId(
+	in p_listId int
+)
+BEGIN
+	select l.listId, l.title, l.icon, li.listItemId, li.title as listItem
+	from lists as l
+	inner join listItems as li on l.listId = li.listId
+	where l.listId = p_listId
+	order by l.listId, li.title;
+END
+
+----------------------------------------------------------------------------
+
+DELIMITER $$
+DROP PROCEDURE IF EXISTS `spUpdateListItem`;
+CREATE PROCEDURE spUpdateListItem(
+	in p_listItemId int,
+	in p_title nvarchar(1000)
+)
+BEGIN
+	UPDATE listItems SET title = p_title WHERE listItemId = p_listItemId;
+END
+
+----------------------------------------------------------------------------
+
+DELIMITER $$
+DROP PROCEDURE IF EXISTS `spDeleteListItem`;
+CREATE PROCEDURE spDeleteListItem(
+	in p_listItemId int
+)
+BEGIN
+	DELETE FROM listItems WHERE listItemId = p_listItemId;
+END
+
+----------------------------------------------------------------------------
+
+DELIMITER $$
+DROP PROCEDURE IF EXISTS `spUpdateListIcon`;
+CREATE PROCEDURE spUpdateListIcon(
+	in p_listId int,
+	in p_icon nvarchar(255)
+)
+BEGIN
+	UPDATE list SET icon = p_icon WHERE listId = p_listId;
+END
+
+----------------------------------------------------------------------------
