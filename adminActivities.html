@@ -1,0 +1,56 @@
+<div id="adminActivities">
+	<h1>Activities</h1>
+	<div id="activitiesListDiv"></div>
+	<div id="adminActivitiesForm">
+		<form action="php/model/adminActivities.php?action=processActivity" id="formActivities" method="post" enctype="multipart/form-data">
+			<div id="activityImgDiv"></div>
+			<div class="formTable">
+				<div class="formTableRow">
+					<div class="formTableCell1">
+						<div class="activityTable">
+							<div class="activityTableRow"><div class="activityTableCell1">Active:</div><div class="activityTableCell2"><div name="activityIsActive" id="activityIsActive"></div></div></div>
+							<div class="activityTableRow"><div class="activityTableCell1">Language:</div><div class="activityTableCell2"><div id="languageListDiv"></div></div></div>
+							<div class="activityTableRow"><div class="activityTableCell1">Title:</div><div class="activityTableCell2"><input type="text" name="activityTitle" id="activityTitle"></div></div>
+							<div class="activityTableRow"><div class="activityTableCell1">Pun:</div><div class="activityTableCell2"><input type="text" name="activityPun" id="activityPun"></div></div>
+							<div class="activityTableRow"><div class="activityTableCell1">Icon:</div><div class="activityTableCell2"><input type="file" name="activityIcon" id="activityIcon"></div></div>
+							<div class="activityTableRow"><div class="activityTableCell1">People:</div><div class="activityTableCell2"><input type="text" name="activityPeople" id="activityPeople"></div></div>
+							<div class="activityTableRow"><div class="activityTableCell1">What To Do:</div><div class="activityTableCell2"><textarea name="activityWhatToDo" id="activityWhatToDo"></textarea></div></div>
+							<div class="activityTableRow"><div class="activityTableCell1">Opinion:</div><div class="activityTableCell2"><textarea name="activityOpinion" id="activityOpinion"></textarea></div></div>
+						</div>
+					</div>
+					<div class="formTableCell2">
+						<div class="activityTable">
+							<div class="activityTableRow">
+								<div class="activityTableCell1"></div>
+								<div class="activityTableCell2"><div class="cellTitleActive">Active</div></div>
+							</div>
+							<div class="activityTableRow">
+								<div class="activityTableCell1">Rules:<div class="newRuleBuildLink"><a href="javascript:addNewRule();">New Rule</a></div></div>
+								<div class="activityTableCell2" id="activityRules"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="progress"><div class="bar"></div><div class="percent">0%</div><div id="status"></div></div>
+			<div>
+				<input type="submit" class="button1" id="btnActivityProcess" value="Update">
+				<input type="reset" class="button1" value="Back" onclick="showActivitiesList();">
+			</div>
+			<input type="hidden" name="activityGroupId" id="activityGroupId" value=""><input type="hidden" name="activityId" id="activityId" value="">
+			<input type="hidden" name="peopleId" id="peopleId" value="">
+			<input type="hidden" name="newRuleCount" id="newRuleCount" value=""><input type="hidden" name="existingRuleIdList" id="existingRuleIdList" value="">
+		</form>
+		<script>
+			(function(){
+				var bar = $('.bar'); var percent = $('.percent'); var status = $('#status');
+				$('#formActivities').ajaxForm({
+					beforeSend: function(){	status.empty();	var percentVal = '0%'; bar.width(percentVal);	percent.html(percentVal);	},
+					uploadProgress: function(event, position, total, percentComplete){ var percentVal = percentComplete + '%'; bar.width(percentVal);	percent.html(percentVal);	},
+					success: function(){ var percentVal = '100%';	bar.width(percentVal); percent.html(percentVal); },
+					complete: function(xhr){ processActivityResult(xhr.responseText); }
+				});
+			})();
+    </script>
+	</div>
+</div>
