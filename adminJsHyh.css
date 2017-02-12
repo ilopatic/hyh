@@ -1,0 +1,125 @@
+@charset "utf-8";
+
+/* layout */
+body{width:100%; height:100%; margin:0px; padding:0px; background-color:#F2F2F2}
+h1 {margin:10px 0px 10px 0px; color:#FF0000;}
+#bodyContainer{margin:0px auto; background-color:#FFFFFF; color:#000000; font-family: sans-serif; border:solid 1px #000000;}
+#pageHdr{background:url(../pics/bannerRed.png) no-repeat;}
+
+.pageMidTable{display:table;}
+.pageMidTableRow{display:table-row;}
+.midContainer{display:table-cell; margin:0px auto; text-align:center;}
+.compulsory{font-weight:bold; color:#FF0000;}
+
+.groupActivity a{text-decoration:none; color:#000000;}
+
+#siteNav{text-align:center;  background-color:#FF0000; display:none;}
+#siteNav a{margin:5px; text-decoration:none; color:#000000;}
+
+.formTable{display:table; width:99%; margin:0px auto;}
+.formTableRow{display:table-row;}
+.formTableCell1{display:table-cell; text-align:right; padding-right:0px; font-weight:bold; width:50%; vertical-align:top; padding-top:5px;}
+.formTableCell2{display:table-cell; text-align:left; padding-left:5px; font-weight:normal; width:50%; vertical-align:top; padding-top:5px;}
+
+#activitiesListDiv{height:600px; overflow-y:scroll; overflow-x:hidden; margin:0px auto;}
+#adminActivitiesForm{display:none;}
+.bckBtnDiv{float:left;}
+.bckBtnDiv img{height:50px; width:50px; border:0px;}
+
+.progress {margin:0px auto; width:300px; border: 1px solid #ddd; padding: 1px; border-radius: 3px; height: 2px; margin-top:5px; margin-bottom:5px;}	
+.bar { background-color: #B4F5B4; width:0%; height:2px; border-radius: 3px;}
+.percent { display:inline-block; top:3px; left:48%; }
+#status{padding-top:30px;}
+#processBtn{padding-top:10px;}
+#processBtn input{margin:5px; color:#000000; font-size:11px;}
+
+.listForm{margin:0px auto; text-align:left; width:680px;}
+.listDiv1{padding-top:5px; text-align:left; font-weight:bold; padding-bottom:5px;}
+.listDiv2{height:420px; overflow-y:scroll; overflow-x:hidden;}
+.listImgDiv{text-align:center;}
+.listImgDiv img{width:50px; height:50px;}
+.listTitle{display:table-cell; color:#FF0000; width:600px;}
+.listDel{display:table-cell; width:50px; text-align:center; font-size:10px;}
+.listItemDiv1{display:table-cell; width:600px;}
+.listItemDiv1 input{width:590px; font-size:11px;}
+.listItemDiv2{display:table-cell; width:50px; text-align:center;}
+.btnListIcon{font-size:10px;}
+
+@media only screen and (min-width: 1200px) {	
+	/* layout */
+	#bodyContainer{width:1200px; font-size:14px;}
+	#pageHdr{height:100px; background-size:1200px 95px;}
+	.midContainer{width:1200px; height:650px;}
+	#siteNav{width:1200px; padding:10px 0px 10px 0px;}
+	.compulsory{font-size:12px;}
+	#adminLoginForm{padding-top:100px;}
+	.button1{margin-top:10px;}
+	.groupActivity img{width:50px; height:50px; padding-right:10px;}
+	.groupActivity{text-align:left; width:230px; padding-bottom:5px; margin:0px auto; font-size:12px;}
+
+	#activityImgDiv img{height:80px; width:80px;}
+	#activityTitle{width:462px;}
+	#activityPun{width:462px;}
+	#activityPeople{width:462px;}
+	#activityWhatToDo{width:460px;height:130px;}
+	#activityOpinion{width:460px;height:130px;}
+
+	.cellTitleActive{text-align:right; font-size:12px; font-weight:bold;}
+	.activityTable{display:table; width:99%;}
+	.activityTableRow{display:table-row;}
+	.activityTableCell1{display:table-cell; text-align:right; padding-right:0px; font-weight:bold; vertical-align:top; padding-top:5px;}
+	.activityTableCell2{display:table-cell; text-align:left; padding-left:5px; font-weight:normal; vertical-align:top; padding-top:5px;}
+	.activityRule{width:480px; margin-right:20px;}
+	.newRuleBuildLink  a{text-decoration:none; font-weight:normal; font-size:10px; color:#000000; margin-top:5px;}
+	
+	.menu a{text-decoration:none; color:#000000;}
+	.menu img{width:50px; height:50px; padding-right:10px;}
+	.menu{text-align:left; width:230px; padding-bottom:5px; margin:0px auto; font-size:12px;}
+}
+
+@media only screen and (min-width: 960px) and (max-width: 1199px) {
+	#bodyContainer{width:900px; font-size:12px;}
+	#pageHdr{height:100px; background-size:900px 95px;}
+	.midContainer{width:900px; height:580px;}
+	#siteNav{width:900px; padding:10px 0px 10px 0px;}
+	#adminLoginForm{padding-top:80px;}
+	.button1{margin-top:10px;}
+	.groupActivity img{width:40px; height:40px; padding-right:10px;}
+	.groupActivity{text-align:left; width:400px; padding-left:370px; padding-bottom:5px;}
+}
+
+/* tablet portrait size to standard 960 */
+@media only screen and (min-width: 768px) and (max-width: 959px){
+	#bodyContainer{width:750px; font-size:11px;}
+	#pageHdr{height:100px; background-size:750px 85px;}
+	.midContainer{width:750px; height:580px;}
+	#siteNav{width:750px; padding:10px 0px 10px 0px;}
+	#adminLoginForm{padding-top:60px;}
+	.button1{margin-top:10px;}
+	.groupActivity img{width:35px; height:35px; padding-right:10px;}
+	.groupActivity{text-align:left; width:300px; padding-left:305px; padding-bottom:5px;}
+}
+
+/* mobile landscape  to tablet portrait */
+@media only screen and (min-width: 480px) and (max-width: 767px){
+	#bodyContainer{width:480px; font-size:11px;}
+	#pageHdr{height:100px; background-size:480px 75px;}
+	.midContainer{width:480px; height:580px;}
+	#siteNav{width:480px; padding:10px 0px 10px 0px;}
+	#adminLoginForm{padding-top:40px;}
+	.button1{margin-top:10px;}
+	.groupActivity img{width:30px; height:30px; padding-right:8px;}
+	.groupActivity{text-align:left; width:240px; padding-left:175px; padding-bottom:5px;}
+}
+
+/* mobile portrait */
+@media only screen and (max-width: 479px){
+	#bodyContainer{width:460px; font-size:11px;}
+	#pageHdr{height:50px; background-size:460px 50px;}
+	.midContainer{width:460px; height:580px;}
+	#siteNav{width:460px; padding:10px 0px 10px 0px;}
+	#adminLoginForm{padding-top:40px;}
+	.button1{margin-top:10px;}
+	.groupActivity img{width:25px; height:25px; padding-right:8px;}
+	.groupActivity{text-align:left; width:275px; padding-left:170px; padding-bottom:5px;}
+}
